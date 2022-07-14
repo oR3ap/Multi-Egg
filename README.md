@@ -25,5 +25,7 @@ This thing is very unstable, so I recommend you to contribute to this project.
 ## Setup
 You must first import the configured egg into your Pterodactyl Server before you can use it to create a server.
 
+https://raw.githubusercontent.com/adreaisbad/Multi-Egg/main/multi-egg.json
+
 ## Contact
 Created by [@adreaisbad](https://adrea.pages.dev) - feel free to contact me!
