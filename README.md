@@ -17,7 +17,7 @@ This thing is very unstable, so I recommend you to contribute to this project.
 - Optimize Paper Server
 - Custom Watermark
 - Aikar Flags for Minecraft Server
-- Limit the use of egg to IP.
+- Limit the use of egg to IP
 
 ## Screenshot
 > Not yet.
