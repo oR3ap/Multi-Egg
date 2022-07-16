@@ -20,7 +20,7 @@ This thing is very unstable, so I recommend you to contribute to this project.
 - Limit the use of egg to IP
 
 ## Screenshot
-> Not yet.
+![Egg screenshot](./screenshot.png)
 
 ## Setup
 You must first import the configured egg into your Pterodactyl Server before you can use it to create a server.
