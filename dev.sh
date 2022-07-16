@@ -6,7 +6,6 @@ function display {
     echo -e "\033c"
 
     #Display MOTD
-    echo "Made by adrea#6661, please do not remove this credit, thank you."
     echo "
 
     ==========================================================================
