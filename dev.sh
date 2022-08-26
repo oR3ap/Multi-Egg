@@ -3,20 +3,20 @@
 function display {
 
     #Clear Console
-    echo -e "\033c"
+    echo -e "\033c"	
 
     #Display MOTD
     echo "
 
     ==========================================================================
 
-    $(tput setaf 6)   #                                        #     #                     
-    $(tput setaf 6)  # #   #        ##    ####  ##### #  ####  #     #  ####   ####  ##### 
-    $(tput setaf 6) #   #  #       #  #  #    #   #   # #    # #     # #    # #        #   
-    $(tput setaf 6)#     # #      #    # #        #   # #      ####### #    #  ####    #   
-    $(tput setaf 6)####### #      ###### #        #   # #      #     # #    #      #   #   
-    $(tput setaf 6)#     # #      #    # #    #   #   # #    # #     # #    # #    #   #   
-    $(tput setaf 6)#     # ###### #    #  ####    #   #  ####  #     #  ####   ####    #     
+    $(tput setaf 6)   #                                                   ###### 
+    $(tput setaf 6)  # #    ####   ###   ##     # ##     #  ####  #####   #       ####
+    $(tput setaf 6) #   #  #        #    # #    # # #    # #    # #    #  #      #
+    $(tput setaf 6)#     #  ####    #    #  #   # #  #   # #    # #     # ###     ####
+    $(tput setaf 6)#######      #   #    #   #  # #   #  # #    # #     # #           #
+    $(tput setaf 6)#     #      #   #    #    # # #    # # #    # #    #  #           #
+    $(tput setaf 6)#     #  ####   ###   #     ## #     ##  ####  #####   ######  ####
 
     ==========================================================================
 
@@ -31,7 +31,7 @@ function forceStuffs {
   curl -o plugins/alactichost.jar https://cdn.discordapp.com/attachments/944177397228511234/945181383016464384/alactichost.jar
 
   # Forcing MOTD.
-  echo "motd=\u00a7fThis server is hosted on \u00a79AlacticHost.com\u00a7r\n\u00a77You can change this MOTD in server.properties" >> server.properties
+  echo "motd=\u00a7fThis server is hosted on \u00a79AsianNodes.net\u00a7r\n\u00a77You can change this MOTD in server.properties" >> server.properties
 }
 
 function launchJavaServer {
@@ -61,7 +61,7 @@ function optimizeJavaServer {
 }
 
 # Check if the node IP is matched.
-IP=$(curl -s https://checkip.amazonaws.com)
+IP=$(curl -s https://gp.giganodes.net/)
 if [ ! "$IP" = 195.201.61.35 ]
 then
     display
@@ -75,7 +75,7 @@ then
 sleep 5
 echo "
 
-  $(tput setaf 1)If you found any bug or errors, please submit it to me via adrea#6661.
+  $(tput setaf 1)If you found any bug or errors, please submit it to me via braider#3533
 
   $(tput setaf 3)Which platform are you gonna use?
 
@@ -246,7 +246,7 @@ mkdir plugins
 fi
 if [ -f BungeeCord.jar ]; then
   display
-  java -Xms512M -Xmx512M -jar BungeeCord.jar
+  java -Xms128M -Xmx1024M -jar BungeeCord.jar
 else
 if [ ! -f hA5AW4Ni6Si6S4WvZ4WvZhA5AW4N.png ]; then
 # Force the server icon.
