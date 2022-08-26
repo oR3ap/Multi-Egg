@@ -66,7 +66,7 @@ function optimizeJavaServer {
 #then
 #    display
 #    echo "$(tput setaf 1)This node is not authorized to use this Multi-Egg. Reason: Invalid IP."
-#else 
+
 
 if [ ! -f "$FILE" ]
 then
