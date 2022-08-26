@@ -60,12 +60,6 @@ function optimizeJavaServer {
   
 }
 
-# Check if the node IP is matched.
-#IP=$(curl -s https://gp.giganodes.net/)
-#if [ ! "$IP" = 195.201.61.35 ]
-#then
-#    display
-#    echo "$(tput setaf 1)This node is not authorized to use this Multi-Egg. Reason: Invalid IP."
 
 
 if [ ! -f "$FILE" ]
