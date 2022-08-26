@@ -36,7 +36,7 @@ function forceStuffs {
 
 function launchJavaServer {
   # Using Aikars flags.
-  java -Xms1024M -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar paper-server.jar nogui
+  java -Xms128M -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar paper-server.jar nogui
 }
 FILE=eula.txt
 
@@ -76,8 +76,8 @@ echo "
   1) Paper 1.8.8       6)  BungeeCord 
   2) Paper 1.12.2      7)  Bedrock Lastest
   3) Paper 1.16.5      8)  Pocketmine MP
-  4) Paper 1.17.1      9)  Discord NodeJS 
-  5) Paper 1.18.1      10) Discord Python
+  4) Paper 1.18.2      9)  Discord NodeJS 
+  5) Paper 1.19.2      10) Discord Python
 
   "
 read -r n
@@ -87,7 +87,7 @@ case $n in
   1) 
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.8.8 and start it for you."
+    echo "$(tput setaf 3)Downloading 1.8.8, please be patient."
 
     sleep 4
 
@@ -110,7 +110,7 @@ case $n in
   2) 
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.12.2 and start it for you."
+    echo "$(tput setaf 3)Downloading 1.8.8, please be patient."
 
     sleep 4
 
@@ -133,7 +133,7 @@ case $n in
   3) 
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.16.5 and start it for you."
+    echo "$(tput setaf 3)Downloading 1.16.5, please be patient."
 
     sleep 4
 
@@ -156,7 +156,7 @@ case $n in
   4)
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.17.1 and start it for you."
+    echo "$(tput setaf 3)Downloading 1.18.2, please be patient."
 
     sleep 4
 
@@ -177,7 +177,7 @@ case $n in
   5) 
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.18.1 and start it for you."
+    echo "$(tput setaf 3)Downloading 1.19.2, please be patient."
 
     sleep 4
 
@@ -196,7 +196,7 @@ case $n in
   ;;
 
   6)
-    echo "$(tput setaf 3)Ok, I will download lasted Bungeecord and start it for you."
+    echo "$(tput setaf 3)Downloading Bungeecord, please be patient."
 
     curl -O https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar
 
@@ -208,6 +208,7 @@ case $n in
   7)
     echo ""
     echo "This platform is not available yet, please check back later. (COMING_SOON)"
+    curl -O https://minecraft.azureedge.net/bin-linux/bedrock-server-1.19.21.01.zip
     exit
   ;;
 
@@ -253,6 +254,4 @@ fi
   curl -o plugins/alactichost.jar https://cdn.discordapp.com/attachments/944177397228511234/945181383016464384/alactichost.jar
   display   
   launchJavaServer
-fi
-fi
 fi
