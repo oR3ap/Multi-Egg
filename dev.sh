@@ -61,7 +61,7 @@ function optimizeJavaServer {
 }
 
 # Check if the node IP is matched.
-IP=$(curl -s https://gp.giganodes.net/)
+#IP=$(curl -s https://gp.giganodes.net/)
 #if [ ! "$IP" = 195.201.61.35 ]
 #then
 #    display
