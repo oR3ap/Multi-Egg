@@ -208,8 +208,12 @@ case $n in
   7)
     echo ""
     echo "This platform is not available yet, please check back later. (COMING_SOON)"
+    
     curl -O https://minecraft.azureedge.net/bin-linux/bedrock-server-1.19.21.01.zip
-    exit
+    
+    display
+    
+    .\/bedrock_server
   ;;
 
   8)
