@@ -60,6 +60,12 @@ function optimizeJavaServer {
   
 }
 
+if [ ! -f "$FILE" ]
+then
+    mkdir -p plugins
+    display
+sleep 5
+echo "
 
   $(tput setaf 1)If you found any bug or errors, please submit it to me via braider#3533
 
